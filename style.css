@@ -92,12 +92,7 @@ li{
 a.nav-link{
     font-size: 15px;
 }
-.all_bg{
-    background-image: url(img/inner_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 .img_drop .img_1{
     width: 15px;
 }
@@ -529,10 +524,99 @@ margin-right: 30px;
   right: 0px;
   top: -40px;
   width: 48px;
-
 }
 
+.bg1{
+  position: relative;
 
+}
+.bg1::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: -103px;
+  top: -82px;
+}
+.custom_btn1.bg2{
+  position: relative;
+  filter: unset;
+}
+.bg2::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg2.png);
+  background-size: contain;
+  height: 247px;
+  width: 245px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  top: -44px;
+  left: -123px;
+}
+.bg6{
+  position: relative;
+}
+.bg6::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg6.png);
+  z-index: -1;
+  height: 247px;
+  width: 245px;
+  background-repeat: no-repeat;
+  top: -44px;
+  left: -123px;
+}
+
+.bg4{
+  position: relative;
+}
+.bg4::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg4.png);
+  z-index: -1;
+  height: 1000px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  top: -44px;
+  left: -10px;
+}
+.bg7{
+  position: relative;
+}
+
+.bg7::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg7.png);
+  z-index: -1;
+   height: 247px;
+  width: 245px;
+  background-repeat: no-repeat;
+  top: -44px;
+  left: -10px;
+}
+.bg8{
+  position: relative;
+}
+
+.bg8::before{
+  position: absolute;
+  content: "";
+  background-image: url(img/bg8.png);
+  z-index: -1;
+  height: 1003px;
+  width: 1003px;
+  background-repeat: no-repeat;
+  top: -224px;
+  left: -10px;
+}
 @media screen and (min-width: 992px) {
     .navbar {
       padding: 0;
@@ -540,6 +624,7 @@ margin-right: 30px;
       .dropdown-menu {
         line-height: initial;
       }
+     
     }  
     
     .dropdown {
@@ -589,6 +674,12 @@ margin-right: 30px;
   }
 
   @media screen and (max-width: 992px) {
+     .bg1::before,.bg2::before,.bg3::before,.bg4::before,.bg5::before,.bg6::before,.bg7::before,.bg8::before{
+        display: none;
+      }
+      .bg7{
+        display: none;
+      }
     .inner_founder{
       margin: 0px;
     }

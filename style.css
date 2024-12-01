@@ -1,5 +1,15 @@
-@import url("https://db.onlinewebfonts.com/c/f66e0c726d747441168bfadd506314d3?family=KIA+Medium");
+@import url("https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap");
 
+@font-face {
+	font-family: 'Gilroy';
+	src: url('Gilroy-Extrabold.eot');
+	src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+		url('Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('Gilroy-Extrabold.woff') format('woff'),
+		url('Gilroy-Extrabold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
 html{
   overflow-x: hidden;
 }
@@ -8,7 +18,6 @@ body {
   font-weight: 500 !important;
   overflow-x: hidden;
   font-family: "Gilroy";
-  font-family: inter;
 }
 :root {
   --primary-color:  #000b6f; 
@@ -21,14 +30,13 @@ body {
 }
 h1 {
 
-    font-size: 45px;
+    font-size: 57px;
     color: var(--primary-color);
     font-weight: 500;
-    font-family: "Gilroy";
 }
 
 h2 {
-  font-size: 58px;
+  font-size: 45px;
 color: var(--primary-color);
 font-weight: 500;
 }
@@ -98,10 +106,9 @@ a.nav-link{
 }
 
 .banner p{
-    font-size: 32px;
+    font-size: 24px;
 line-height: 44px;
 color: #282b44;
-font-family: "Gilroy";
 }
 .fa-arrow-right-long:before, .fa-long-arrow-right:before {
     content: "\f178";
@@ -215,7 +222,7 @@ width: 95%;
     padding-top: 17px;
     width: 90%;
     position: relative;
-    top: -7px;
+    top: -11px;
     text-align: center;
 }
 .col-lg-4:hover .inner_box{
@@ -416,7 +423,7 @@ color: #282b44;
 }
 
 .tutors h2{
-  font-size: 50px;
+  font-size: 45px;
   color: #fff;
 }
 .case{
@@ -585,7 +592,7 @@ margin-right: 30px;
   width: 1000px;
   background-repeat: no-repeat;
   top: -44px;
-  left: -10px;
+  left: 31px;
 }
 .bg7{
   position: relative;
@@ -626,7 +633,7 @@ margin-right: 30px;
       }
      
     }  
-    
+   
     .dropdown {
       .dropdown-menu {
         display: none;
@@ -674,6 +681,9 @@ margin-right: 30px;
   }
 
   @media screen and (max-width: 992px) {
+    .mobile_inner{
+      margin-bottom: 45px;
+    }
      .bg1::before,.bg2::before,.bg3::before,.bg4::before,.bg5::before,.bg6::before,.bg7::before,.bg8::before{
         display: none;
       }
